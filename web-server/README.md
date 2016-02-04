@@ -1,7 +1,6 @@
 web-server
 ============
-both frontend and backend code for my personal website
-
+Node.js Express server that serve my personal website
 
 ####Versions
 * Stable Version:0.0.1
