@@ -1,0 +1,11 @@
+{
+    "name" : "Minerva", 
+    "description" : "node server running personal website", 
+    "author": "Xiang Zhi Tan <tan.xiang.zhi@gmail.com>", 
+    "dependencies":{
+        "express": " == 4.4.3",
+	"express-handlebars":"2.0.x",
+	"body-parser":"1.13.x"
+
+    }
+}

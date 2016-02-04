@@ -1,0 +1,182 @@
+<div class="navbar-wrapper">
+  <div class="container">
+  <!-- Made the nav bar fixed to the top-->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">XZ</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#CV">Curriculum Vitae</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="./pictures/chicago.jpg" alt="First slide" width="100%">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>About</h1>
+          <p>Who What Why When Where</p>
+          <p><a class="btn btn-lg btn-primary" href="#About" role="button">Me</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="./pictures/nao_back.jpg" alt="Second slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Projects</h1>
+          <p>What I'm doing now</p>
+          <p><a class="btn btn-lg btn-primary" href="#Projects" role="button">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="./pictures/CV.jpg" alt="Third slide" width="100%">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>CV</h1>
+          <p>A document showing the journey</p>
+          <p><a class="btn btn-lg btn-primary" href="#CV" role="button">Read</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div><!-- /.carousel -->
+
+<div class="container">
+
+  <!-- Start feature -->
+  <!--
+  <div class="row featurette" id="latest">
+    <div class="col-md-10 col-md-offset-1">
+      <h2 class="featurette-heading">Latest news</h2>
+      {{#each (limit news 5)}}
+      <div class="news-unit">
+        <div class="col-md-2 col-md-offset-1">
+          <p class="news-date">{{date}}</p>
+        </div>
+        <div class="col-md-8">
+          <p class="news-text">{{text}}</p>
+        </div>
+        <!--
+        <div class="col-md-10">
+        tags: <p>tags, tags, tags</p>
+        </div>
+      </div>
+      {{/each}}
+      <div class="col-md-5 col-md-offset-1">
+      CLICK HERE TO SEE PAST NEWS
+      </div>
+    </div>
+    <div class="col-md-1 col-md-offset-11 back-bar"
+      <p class="pull-right"><a href="#">Back to top</a></p>
+    </div>
+  </div>
+  -->
+  <hr class="featurette-divider" \>
+  <div class="row featurette" id="About">
+    <div class="col-md-7 col-md-offset-1">
+      <h2 class="featurette-heading">About</h2>
+      <p class="lead"> An Undergraduate Student from University of Wisconsin - Madison. Intersted in using computer in assisting humanity in their daily lives and how human can better leverage modern day computers.</p>
+    </div>
+    <div class="col-md-3">
+      <img class="featurette-img img-responsive" src="./pictures/me.png" alt="Generic placeholder image">
+    </div>
+    <div class="col-md-1 col-md-offset-11 back-bar"
+      <p class="pull-right"><a href="#">Back to top</a></p>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+  <div class="row featurette" id="CV">
+    <div class="col-md-9 col-md-offset-1">
+      <h2 class="featurette-heading">Curriculum Vitae</h2>
+      <p class="lead">A copy of the CV can also be found <a href="./pdf/xiangzhitan.pdf">here</a></p>
+      <object data="./pdf/xiangzhitan.pdf" type="application/pdf" width="100%" height="400px" style="margin:10px">
+        <p>Alternative text - include a link <a href="./pdf/xiangzhitan.pdf">to the PDF!</a></p>
+        </object>
+    </div>
+    <div class="col-md-1 col-md-offset-11 back-bar"
+      <p class="pull-right"><a href="#">Back to top</a></p>
+    </div>
+  </div>
+  <hr class="featurette-divider" id="Projects">
+  <div class="row featurette">
+    <div class="col-md-8 col-md-offset-3">
+      <h2 class="featurette-heading"> Research Projects <span class="h3 text-muted">investigate the possibility</span></h2>
+      <p class="lead"> Short description of current and past research projects. Details of these projects can be found in their respective articles or <a href="https://github.com/Wisc-HCI">github</a></p>
+      <hr class="research-divider" \>
+      <div class="row featurette">
+        <div class="col-md-8">
+          <h3 class="research-heading"> Google Glass</h3>
+          <p class="lead"><spam class="status">[In-Progress]</spam> Investigate revolutionary usage of wearable computers such as Google Glass in society</p>
+        </div>
+        <div class="col-md-4">
+          <img class="research-image img-responsive" src="./pictures/glass.png" alt="Glass image">
+        </div>
+      </div>
+      <hr class="research-divider" \>
+      <div class="row featurette">
+        <div class="col-md-8">
+          <h3 class="research-heading"> Gaze Aversion in Human like robot</h3>
+          <p class="lead"><spam class="status">[Completed]</spam> Colaborate with <a href="http://pages.cs.wisc.edu/~sandrist/">Sean Andrest</a> in developing a system in evaluating the usage of gaze aversion in human-robot interaction. Findings of this project was presented at HRI 2014.</p>
+          </div>
+        <div class="col-md-4">
+          <img class="research-image img-responsive" src="./pictures/nao.png" alt="Gaze Aversion">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1 col-md-offset-11 back-bar">
+      <p class="pull-right"><a href="#">Back to top</a></p>
+    </div>
+  </div>
+  <hr class="featurette-divider" id="Contact" \>
+  <div class="row featurette">
+    <div class="col-md-7 col-md-offset-3">
+      <h2 class="featurette-heading"> Interested in Talking with Me? </h2>
+      <p class="lead">
+        Email:xtan (at) cs.wisc.edu<br>
+        Phone: 608.320.7053
+      </p>
+    </div>
+  </div>
+  <hr class="featurette-divider" \>
+
+  <!-- /END THE FEATURETTES -->
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>&copy; Xiang Zhi Tan &middot;</p>
+  </footer>
+
+</div><!-- /.container -->

@@ -1,0 +1,36 @@
+
+<h1>Add News Item</h1>
+<div class="container">
+  <div id="add-div" class="form-group">
+      <label class="date col-sm-1">Date:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="new-date">
+      </div>
+      <label class="key col-sm-1">Text:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="new-text">
+      </div>
+      <button class="col-sm-2 btn btn-primary" id="add-btn">Add</button>
+  </div>
+  <div>
+    <h3>Current News</h3>
+
+     <table class="table">
+      <thead>
+        <th>Date</th>
+        <th>Text</th>
+        <th>Option</th>
+      </thead>
+      <tbody>
+        {{#each news}}
+        <tr>
+          <td>{{date}}</td>
+          <td>{{text}}</td>
+          <td><button class="btn btn-danger delete-btn" value={{@index}}>Delete</button></td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
+<script src="./js/page.add.js"></script>

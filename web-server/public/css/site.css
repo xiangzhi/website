@@ -1,0 +1,45 @@
+.research-image{
+    max-height: 400px;
+    max-width:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back-bar{
+    margin-top: 20px;
+}
+
+.featurette-img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.research-divider {
+  margin: 50px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.text-muted{
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.research-heading {
+  font-weight: 250;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.status {
+    font-weight: 400;
+}
+
+.carousel-caption{
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+    .research-head {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,7 @@
+{
+	"webServer":"http://localhost:8080",
+	"keyLocation":"Dev/websites/testFiles/testKey.pem",
+	"certLocation":"Dev/websites/testFiles/testCert.pem",
+	"httpsPortNum":8443,
+	"httpPortNum":2000
+}
