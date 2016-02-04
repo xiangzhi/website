@@ -1,8 +1,10 @@
 ##Website
+
 Owner:Zhi
+
 Email:zhi@xiangzhitan.com
 
-Repo for the front-end and back-end code for my server
+Repo for the front-end and back-end code for my server. 
 The server's content can be access at the URL:[https://xiangzhitan.com](https://xiangzhitan.com)
 
 Consist of:
