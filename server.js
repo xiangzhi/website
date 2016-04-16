@@ -16,13 +16,13 @@ var bodyParser = require('body-parser');
 
 //constants
 var PORT_NUM = 8080;
-var INFO_FILE_PATH = path.join(__dirname, "info.json");
+//var INFO_FILE_PATH = path.join(__dirname, "info.json");
 
 //variables
 //load the info path into something persistant
 //basically we are using a file as a database
-var latestNews = JSON.parse(fs.readFileSync(INFO_FILE_PATH));
-
+//var latestNews = JSON.parse(fs.readFileSync(INFO_FILE_PATH));
+/*
 function saveNews(callback){
     fs.writeFile(INFO_FILE_PATH,
         JSON.stringify(latestNews, null, 2), function(err){
@@ -34,7 +34,7 @@ function saveNews(callback){
             callback();
         });
 }
-
+*/
 
 var app = express();
 //use the handlebar rendering engine
@@ -45,7 +45,8 @@ app.engine('hbs', expressHbs(
     helpers: {
       limit: function (arr, limit) {
           //if (!_.isArray(arr)) { return []; } // remove this line if you don't want the lodash/underscore dependency
-          return arr.slice(0, limit);
+	return arr	          
+//return arr.slice(0, limit);
         }
     }
 }));
@@ -73,7 +74,7 @@ if(env == 'production'){
 app.get("/", function(req, res ){
     console.log("get - base page");
     var obj = {
-        news:latestNews
+        //news:latestNews
     };
     res.render("index.hbs", obj);
     //res.end("hello world");
