@@ -121,7 +121,7 @@ app.all('*',function(req,res){
 });
 
 //start listening
-app.listen(PORT_NUM, function(){
+app.listen(PORT_NUM,'localhost',function(){
     console.log("server listening at " + PORT_NUM);
     console.log("in " + env + ' mode')
 });
