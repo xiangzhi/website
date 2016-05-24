@@ -1,9 +1,11 @@
 {
-    "name" : "Minerva-Proxy-Server", 
-    "description" : "node server redirecting ", 
+    "name" : "Minerva", 
+    "description" : "node server running personal website", 
     "author": "Xiang Zhi Tan <tan.xiang.zhi@gmail.com>", 
     "dependencies":{
-        "http-proxy":"1.11.x",
-        "console-stamp":"0.2.x"
+        "express": " == 4.4.3",
+	"express-handlebars":"2.0.x",
+	"body-parser":"1.13.x"
+
     }
 }
